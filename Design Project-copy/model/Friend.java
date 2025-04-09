@@ -1,5 +1,5 @@
 package model;
-
+import java.util.ArrayList;
 
 /**
  * Lav en beskrivelse af klassen Friend her.
@@ -9,7 +9,7 @@ package model;
  */
 public class Friend
 {
-    // har sætter vi parrametrene til at finde vores friends
+    private ArrayList<Friend>friends;// har sætter vi parrametrene til at finde vores friends
     private String name;
     private String phone;
     private String address;
@@ -28,13 +28,15 @@ public class Friend
         this.city = city;
     }
 
-    
+    /*
     public String getName(){
         return name;
     }
+    */
     public String getPhone(){
         return phone;
     }
+    /*
     public String getAddress(){
         return address;
     }
@@ -44,7 +46,5 @@ public class Friend
     public String getCity(){
         return city;
     }
+    */
 }
-
-    
-        
