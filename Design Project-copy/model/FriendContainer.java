@@ -7,7 +7,7 @@ package model;
  * @author (dit navn her)
  * @version (versions nummer eller dato her)
  */
-public class friendContainer
+public class FriendContainer
 {
     // instansvariabler - erstat eksemplet herunder med dine egne variabler
     private int x;
@@ -15,7 +15,7 @@ public class friendContainer
     /**
      * Konstruktør for objekter af klassen dfgh
      */
-    public friendContainer()
+    public FriendContainer()
     {
         // initialiser instansvariable
         x = 0;
