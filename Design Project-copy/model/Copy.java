@@ -1,5 +1,6 @@
 package model;
 
+
 /**
  * Lav en beskrivelse af klassen Copy her.
  * 
@@ -33,6 +34,6 @@ public class Copy
     }
     public int getPurchasePrice() {
         return purchasePrice;
-    }    
-}
+    }
+    }
 

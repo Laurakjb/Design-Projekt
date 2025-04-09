@@ -1,5 +1,5 @@
 package model;
-import java.util.ArrayList;
+
 
 /**
  * Lav en beskrivelse af klassen dfgh her.
@@ -7,42 +7,29 @@ import java.util.ArrayList;
  * @author (dit navn her)
  * @version (versions nummer eller dato her)
  */
-public class FriendContainer
+public class friendContainer
 {
-    private ArrayList<Friend>friends;// instansvariabler - erstat eksemplet herunder med dine egne variabler
-    private static FriendContainer _instance;
-    /**
-     * Konstruktør for objekter af klassen LoanContainer
-     */
+    // instansvariabler - erstat eksemplet herunder med dine egne variabler
+    private int x;
 
-    private FriendContainer() {
-            friends = new ArrayList<>();
-        }
-    private static FriendContainer getInstance() {
-        if (_instance == null) {
-            _instance = new FriendContainer();
-        }
-        return _instance;
+    /**
+     * Konstruktør for objekter af klassen dfgh
+     */
+    public friendContainer()
+    {
+        // initialiser instansvariable
+        x = 0;
     }
-    public Friend addFriendByPhone(Friend friend) {
-        this.friends.add(friend);
-        friend.setPhone(friend);
-        friend.add(friend);
-        
-    }
-    public Friend findFriendByPhone(String phone) {
-        Friend friend = null;
-        boolean found = false;
-        int i = 0;
-        while (!found && i < friends.size()){
-            Friend f = friends.get(i);
-            if (f.getPhone () == phone){
-                friend = f;
-                found = true;
-            }
-            else {i++;}
-        }
-        return friend;
+
+    /**
+     * Et eksempel på en metode - erstat denne kommentar med din egen
+     * 
+     * @param  y  eksempel på en parameter til en metode
+     * @return    summen af x og y 
+     */
+    public int sampleMethod(int y)
+    {
+        // indsæt din egen kode her
+        return x + y;
     }
 }
-

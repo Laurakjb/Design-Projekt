@@ -1,5 +1,5 @@
 package model;
-import java.util.ArrayList;
+
 
 /**
  * Lav en beskrivelse af klassen LP her.
@@ -15,49 +15,47 @@ public class LP
     private String title;
     private int barcode;
     private String publicationDate;
-    private ArrayList<Copy> copies;
-    
+    private Copy copy;
+
 
     /**
      * Konstruktør for objekter af klassen LP
      */
-    public LP(String artist, String title, int barcode, String publicationDate)
+    public LP(String artist, String title)
     {
         this.artist = artist;
         this.title = title;
         this.barcode = barcode;
         this.publicationDate = publicationDate;
-        this.copies = new ArrayList <Copy>();
+        this.copy = copy;
 
 
-    }
-    
-    public boolean addCopy (Copy copy) {
-        return copies.add(copy);
-    }
-    
-    public Copy findCopyBySerialNumber (int serialNumber) {
-        for (Copy copy : copies) {
-            if (copy.getSerialNumber() ==serialNumber) {
-                return copy;
-            }
-        }
-        return null;
     }
     
     public String getArtist(){
         return artist;
     }
+    
     public String getTitle(){
         return title;
     }
+    
     public int getBarcode(){
         return barcode;
     }
-    public String getPublicationDate() {
+    
+    public String publicationDate() {
         return publicationDate;
     }
-    public ArrayList<Copy> getCopies() {
-        return copies;
+    public Copy copy() {
+        return copy;
     }
+
+    /**
+     * Et eksempel på en metode - erstat denne kommentar med din egen
+     * 
+     * @param  y  eksempel på en parameter til en metode
+     * @return    summen af x og y 
+     */
 }
+
