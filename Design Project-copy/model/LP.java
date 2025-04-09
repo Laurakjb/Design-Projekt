@@ -15,7 +15,7 @@ public class LP
     private String title;
     private int barcode;
     private String publicationDate;
-    
+    private Copy copy;
 
 
     /**
@@ -27,6 +27,7 @@ public class LP
         this.title = title;
         this.barcode = barcode;
         this.publicationDate = publicationDate;
+        this.copy = copy;
 
 
     }
@@ -45,6 +46,9 @@ public class LP
     
     public String publicationDate() {
         return publicationDate;
+    }
+    public Copy copy() {
+        return copy;
     }
 
     /**
