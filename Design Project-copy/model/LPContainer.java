@@ -16,11 +16,11 @@ public class LPContainer
     private LPContainer() {
         LP = new ArrayList<>();
         
-        LP fearless = new LP("Fearless" , "Taylor Swift", 888, "2022-08-12");
+        LP fearless = new LP("Fearless", "Taylor Swift",888, "2022-08-12");
         fearless.addCopy(new Copy(2001, "2024-06-08", 5));
         fearless.addCopy(new Copy(2002, "2024-08-09", 10));
         
-        LP pinkFriday = new LP("PinkFriday" , "Nicki Minaj", 255, "2021-07-04");
+        LP pinkFriday = new LP("PinkFriday", "Nicki Minaj",255, "2021-07-04");
         pinkFriday.addCopy(new Copy(2003, "2023-05-05", 15));
         pinkFriday.addCopy(new Copy(2004, "2024-04-04", 20));
         

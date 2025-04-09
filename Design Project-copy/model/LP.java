@@ -21,7 +21,7 @@ public class LP
     /**
      * Konstruktør for objekter af klassen LP
      */
-    public LP(String artist, String title)
+    public LP(String artist, String title, int barcode, String publicationDate)
     {
         this.artist = artist;
         this.title = title;
