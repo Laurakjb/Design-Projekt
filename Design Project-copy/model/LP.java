@@ -2,34 +2,56 @@ package model;
 
 
 /**
- * Write a description of class LP here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * Lav en beskrivelse af klassen LP her.
+ * 
+ * @author (dit navn her)
+ * @version (versions nummer eller dato her)
  */
 public class LP
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    // instansvariabler - erstat eksemplet herunder med dine egne variabler
+
+    private String artist;
+    private String title;
+    private int barcode;
+    private String publicationDate;
+    
+
 
     /**
-     * Constructor for objects of class LP
+     * Konstruktør for objekter af klassen LP
      */
-    public LP()
+    public LP(String artist, String title)
     {
-        // initialise instance variables
-        x = 0;
+        this.artist = artist;
+        this.title = title;
+        this.barcode = barcode;
+        this.publicationDate = publicationDate;
+
+
+    }
+    
+    public String getArtist(){
+        return artist;
+    }
+    
+    public String getTitle(){
+        return title;
+    }
+    
+    public int getBarcode(){
+        return barcode;
+    }
+    
+    public String publicationDate() {
+        return publicationDate;
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * Et eksempel på en metode - erstat denne kommentar med din egen
+     * 
+     * @param  y  eksempel på en parameter til en metode
+     * @return    summen af x og y 
      */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
 }
+
