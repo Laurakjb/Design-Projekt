@@ -2,34 +2,52 @@ package model;
 
 
 /**
- * Write a description of class Loan here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * Lav en beskrivelse af klassen Loan her.
+ * 
+ * @author (dit navn her)
+ * @version (versions nummer eller dato her)
  */
 public class Loan
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    
+    private int loanNumber;
+    private String borrowedDate;
+    private String returnDate;
+    private boolean status;
+    
 
     /**
-     * Constructor for objects of class Loan
+     * Konstruktør for objekter af klassen Loan
      */
-    public Loan()
-    {
-        // initialise instance variables
-        x = 0;
+    public Loan(int loanNumber, String borrowedDate, String returnDate, String status) {
+        this.loanNumber = loanNumber;
+        this.borrowedDate = borrowedDate;
+        this.returnDate = returnDate;
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    public int getLoanNumber() {
+        return loanNumber;
     }
-}
+    
+    public String getBorrowedDate() {
+        return borrowedDate;
+    }
+    
+    public String getReturnDate() {
+        return returnDate;
+    }
+    public void createloan(int loanNumber, String borrowDate) {
+        
+    }
+    public String addFriendByPhone(String phone) {
+        return phone;
+    }
+    public void addToLoan(Loan l) {
+        
+    }
+    public void setStatus() { 
+        this.status = status;
+    }
+    public void setBorrowedDate() {
+        this.borrowedDate = borrowedDate;
+    }
+}    
