@@ -19,7 +19,7 @@ public class LoanController
     /**
      * Konstruktør for objekter af klassen LoanCtrl
      */
-    public LoanController() {
+    public Loan LoanController(Friend friend) {
         
     }
     
