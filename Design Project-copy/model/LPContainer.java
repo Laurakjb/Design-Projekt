@@ -36,7 +36,7 @@ public class LPContainer
     }
     public Copy findCopyBySerialNumber (int serialNumber) {
         for (LP lp : lps) {
-            LP lp = LPContainer.findCopyBySerialNumber(serialNumber);
+            Copy copy = lp.findCopyBySerialNumber(serialNumber);
             if (copy !=null) {
                 return copy;
             }

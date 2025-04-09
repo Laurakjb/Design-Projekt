@@ -21,7 +21,7 @@ public class LPController {
         return lpContainer.findCopyBySerialNumber(serialNumber);
     }
     
-    public void findCopyBySerialNumber(int serialNumber) {
-        
+    public Copy findCopyBySerialNumber(int serialNumber) {
+       return ; 
     }
 }
