@@ -1,5 +1,5 @@
 package model;
-
+import java.util.ArrayList;
 
 /**
  * Lav en beskrivelse af klassen dfgh her.
@@ -9,27 +9,24 @@ package model;
  */
 public class FriendContainer
 {
-    // instansvariabler - erstat eksemplet herunder med dine egne variabler
-    private int x;
-
+    private ArrayList<Friend>friends = new ArrayList<>();// instansvariabler - erstat eksemplet herunder med dine egne variabler
+    private static FriendContainer _instance;
     /**
-     * Konstruktør for objekter af klassen dfgh
+     * Konstruktør for objekter af klassen LoanContainer
      */
-    public FriendContainer()
-    {
-        // initialiser instansvariable
-        x = 0;
+    private FriendContainer() {
+            ArrayList<Friend> friends = new ArrayList<>();
+        }
+    private static FriendContainer getInstance() {
+        if (_instance == null) {
+            _instance = new FriendContainer();
+        }
+        return _instance;
     }
-
-    /**
-     * Et eksempel på en metode - erstat denne kommentar med din egen
-     * 
-     * @param  y  eksempel på en parameter til en metode
-     * @return    summen af x og y 
-     */
-    public int sampleMethod(int y)
-    {
-        // indsæt din egen kode her
-        return x + y;
+    public Friend findFriendByPhone(String phone) {
+        friends.add(phone);
+        return null;
     }
+    
 }
+

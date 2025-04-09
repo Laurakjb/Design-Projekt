@@ -1,5 +1,6 @@
 package Controller;
-
+import model.FriendContainer;
+import model.Friend;
 
 /**
  * Write a description of class FriendCtrl here.
@@ -10,15 +11,13 @@ package Controller;
 public class FriendController
 {
     // instance variables - replace the example below with your own
-    private int x;
-
+    private FriendContainer friendContainer;
+    private Friend friend;
     /**
      * Constructor for objects of class FriendCtrl
      */
-    public FriendController()
-    {
-        // initialise instance variables
-        x = 0;
+    public FriendController() {
+   
     }
 
     /**
@@ -27,9 +26,8 @@ public class FriendController
      * @param  y  a sample parameter for a method
      * @return    the sum of x and y
      */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    public Friend findFriendByPhone(int phone) {
+        return
+        
     }
 }
