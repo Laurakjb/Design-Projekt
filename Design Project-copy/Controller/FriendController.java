@@ -17,9 +17,15 @@ public class FriendController
      * Constructor for objects of class FriendCtrl
      */
     public FriendController() {
-   
+        friendContainer = new FriendContainer.getInstance();
     }
-
+    public void createFriend(String phone) {
+        Friend freind = new friend(phone);
+        friendContainer.addFriend(friend);
+    }
+    
+    
+    
     /**
      * An example of a method - replace this comment with your own
      *
@@ -27,7 +33,7 @@ public class FriendController
      * @return    the sum of x and y
      */
     public Friend findFriendByPhone(int phone) {
-        return
+        return friendContainer.findFriendByPhone(phone);
         
     }
 }
