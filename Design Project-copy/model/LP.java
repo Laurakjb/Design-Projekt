@@ -1,5 +1,5 @@
 package model;
-import java.util.Arraylist;
+import java.util.ArrayList;
 
 /**
  * Lav en beskrivelse af klassen LP her.
@@ -15,7 +15,7 @@ public class LP
     private String title;
     private int barcode;
     private String publicationDate;
-    private ArrayList<<Copy> copies;
+    private ArrayList<Copy> copies;
     
 
     /**
@@ -58,9 +58,4 @@ public class LP
     public String publicationDate() {
         return publicationDate;
     }
-    public Copy copy() {
-        return copy;
-    }
-    }
-
-
+}

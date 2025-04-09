@@ -34,6 +34,5 @@ public class Copy
     public int getPurchasePrice() {
         return purchasePrice;
     }    
-    }
-    }
+}
 
