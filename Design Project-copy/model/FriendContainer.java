@@ -14,6 +14,7 @@ public class FriendContainer
     /**
      * Konstruktør for objekter af klassen LoanContainer
      */
+
     private FriendContainer() {
             ArrayList<Friend> friends = new ArrayList<>();
         }
