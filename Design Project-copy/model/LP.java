@@ -50,7 +50,9 @@ public class LP
     public Copy copy() {
         return copy;
     }
-
+    public Copy findCopyBySerialNumber(int serialNumber) {
+        
+    }
     /**
      * Et eksempel på en metode - erstat denne kommentar med din egen
      * 
