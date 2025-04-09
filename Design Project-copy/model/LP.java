@@ -16,7 +16,6 @@ public class LP
     private int barcode;
     private String publicationDate;
     private Copy copy;
-    private String hej;
 
 
     /**

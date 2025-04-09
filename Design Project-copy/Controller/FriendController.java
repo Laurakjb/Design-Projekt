@@ -2,20 +2,20 @@ package Controller;
 
 
 /**
- * Write a description of class LPCtrl here.
+ * Write a description of class FriendCtrl here.
  *
  * @author (your name)
  * @version (a version number or a date)
  */
-public class LPCtrl
+public class FriendController
 {
     // instance variables - replace the example below with your own
     private int x;
 
     /**
-     * Constructor for objects of class LPCtrl
+     * Constructor for objects of class FriendCtrl
      */
-    public LPCtrl()
+    public FriendController()
     {
         // initialise instance variables
         x = 0;
