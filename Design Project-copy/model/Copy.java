@@ -2,34 +2,38 @@ package model;
 
 
 /**
- * Write a description of class Copy here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * Lav en beskrivelse af klassen Copy her.
+ * 
+ * @author (dit navn her)
+ * @version (versions nummer eller dato her)
  */
 public class Copy
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    // instansvariabler - erstat eksemplet herunder med dine egne variabler
+    private int serialNumber;
+    private String purchaseDate;
+    private int purchasePrice;
+    
 
     /**
-     * Constructor for objects of class Copy
+     * Konstruktør for objekter af klassen Copy
      */
-    public Copy()
+    public Copy(int serialNumber, String purchaseDate, int purchasePrice)
     {
-        // initialise instance variables
-        x = 0;
+       this.serialNumber = serialNumber;
+       this.purchaseDate = purchaseDate;
+       this.purchasePrice = purchasePrice;
+       
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    public int getSerialNumber(){
+        return serialNumber;
     }
-}
+    public String getPurchaseDate() {
+        return purchaseDate;
+    }
+    public int getPurchasePrice() {
+        return purchasePrice;
+    }
+    }
+
