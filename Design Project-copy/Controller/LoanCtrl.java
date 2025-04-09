@@ -11,7 +11,7 @@ public class LoanCtrl
 {
     // instance variables - replace the example below with your own
     private int x;
-
+    private int y;
     /**
      * Constructor for objects of class LoanCtrl
      */
