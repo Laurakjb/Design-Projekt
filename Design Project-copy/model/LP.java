@@ -27,13 +27,15 @@ public class LP
         this.title = title;
         this.barcode = barcode;
         this.publicationDate = publicationDate;
-        this.copies = new ArrayList <>();
+        this.copies = new ArrayList <Copy>();
 
 
     }
-    public void addCopy (Copy copy) {
-        copies.add(copy);
+    
+    public boolean addCopy (Copy copy) {
+        return copies.add(copy);
     }
+    
     public Copy findCopyBySerialNumber (int serialNumber) {
         for (Copy copy : copies) {
             if (copy.getSerialNumber() ==serialNumber) {
