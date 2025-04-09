@@ -2,34 +2,34 @@ package model;
 
 
 /**
- * Write a description of class FriendContainer here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * Lav en beskrivelse af klassen dfgh her.
+ * 
+ * @author (dit navn her)
+ * @version (versions nummer eller dato her)
  */
-public class FriendContainer
+public class friendContainer
 {
-    // instance variables - replace the example below with your own
+    // instansvariabler - erstat eksemplet herunder med dine egne variabler
     private int x;
 
     /**
-     * Constructor for objects of class FriendContainer
+     * Konstruktør for objekter af klassen dfgh
      */
-    public FriendContainer()
+    public friendContainer()
     {
-        // initialise instance variables
+        // initialiser instansvariable
         x = 0;
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * Et eksempel på en metode - erstat denne kommentar med din egen
+     * 
+     * @param  y  eksempel på en parameter til en metode
+     * @return    summen af x og y 
      */
     public int sampleMethod(int y)
     {
-        // put your code here
+        // indsæt din egen kode her
         return x + y;
     }
 }

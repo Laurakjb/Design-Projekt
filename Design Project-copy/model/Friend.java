@@ -2,34 +2,49 @@ package model;
 
 
 /**
- * Write a description of class Friend here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * Lav en beskrivelse af klassen Friend her.
+ * 
+ * @author (dit navn her)
+ * @version (versions nummer eller dato her)
  */
 public class Friend
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Friend
-     */
-    public Friend()
+    // har sætter vi parrametrene til at finde vores friends
+    private String name;
+    private String phone;
+    private String address;
+    private int postalCode;
+    private String city;
+    
+    // * Konstruktør for objekter af klassen Friend
+    
+    public Friend(String name, String phone, String address, int postalCode, String city)
     {
-        // initialise instance variables
-        x = 0;
+        // initialiser instansvariable
+        this.name = name;
+        this.phone = phone;
+        this.address = address;
+        this.postalCode = postalCode;
+        this.city = city;
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    
+    public String getName(){
+        return name;
+    }
+    public String getPhone(){
+        return phone;
+    }
+    public String getAddress(){
+        return address;
+    }
+    public int getPostalCode(){
+        return postalCode;
+    }
+    public String getCity(){
+        return city;
     }
 }
+
+    
+        
