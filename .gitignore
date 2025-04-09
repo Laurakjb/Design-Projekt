@@ -18,3 +18,6 @@
 # Allow directory traversal so .java files in subdirectories are included
 
 !*/
+Design Project-copy/package.bluej
+*.bluej
+*.bluej
