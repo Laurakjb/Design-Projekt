@@ -23,7 +23,7 @@ public class LoanController
         
     }
     
-    public void addCopyToLoan(Copy c) {
+    public void addCopyToLoan(/*Copy c*/) {
         
     }
     
