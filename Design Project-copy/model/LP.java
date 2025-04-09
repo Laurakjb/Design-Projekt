@@ -51,7 +51,12 @@ public class LP
         return copy;
     }
     public Copy findCopyBySerialNumber(int serialNumber) {
-        
+        for (Copy copy : copies) {
+            if (copy.getSerialNumber() == serialNumber) {
+                return copy;
+            }
+        }
+        return null;
     }
     /**
      * Et eksempel på en metode - erstat denne kommentar med din egen
