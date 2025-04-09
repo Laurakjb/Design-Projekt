@@ -48,16 +48,16 @@ public class LP
     public String getArtist(){
         return artist;
     }
-    
     public String getTitle(){
         return title;
     }
-    
     public int getBarcode(){
         return barcode;
     }
-    
-    public String publicationDate() {
+    public String getPublicationDate() {
         return publicationDate;
+    }
+    public ArrayList<Copy> getCopies() {
+        return copies;
     }
 }
