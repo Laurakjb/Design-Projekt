@@ -9,7 +9,7 @@ import java.util.ArrayList;
  */
 public class Friend
 {
-    private ArrayList<Friend>friends;// har sætter vi parrametrene til at finde vores friends
+    // har sætter vi parrametrene til at finde vores friends
     private String name;
     private String phone;
     private String address;
