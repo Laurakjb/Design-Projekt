@@ -1,6 +1,8 @@
 package Controller;
 
+import model.LPContainer;
 
+import model.Copy;
 /**
  * Write a description of class LPCtrl here.
  *
@@ -8,26 +10,14 @@ package Controller;
  * @version (a version number or a date)
  */
 public class LPController {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class LPCtrl
-     */
-    public LPController() {
-        // initialise instance variables
-        x = 0;
+    private LPContainer lpContainer;
+    
+    public LPController(){
+        lpContainer = LPContainer.getInstance();
+        
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    
+    public Copy findCopy(int serialNumber) {
+        return lpContainer.findCopyBySerialNumber(serialNumber);
     }
 }
