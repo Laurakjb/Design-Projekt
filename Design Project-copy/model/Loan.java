@@ -1,12 +1,5 @@
 package model;
 
-
-/**
- * Lav en beskrivelse af klassen Loan her.
- * 
- * @author (dit navn her)
- * @version (versions nummer eller dato her)
- */
 public class Loan
 {
     
