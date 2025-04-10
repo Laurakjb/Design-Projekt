@@ -1,4 +1,5 @@
 package model;
+import java.util.ArrayList;
 
 
 /**
@@ -9,27 +10,40 @@ package model;
  */
 public class LoanContainer
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    private ArrayList<Loan>loans;
+    private static LoanContainer instance;
+    private Loan loan;
 
     /**
      * Constructor for objects of class LoanContainer
      */
-    public LoanContainer()
-    {
-        // initialise instance variables
-        x = 0;
+    public LoanContainer() {
+        loans = new ArrayList<>();
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    
+    public static LoanContainer getInstance() {
+        if (instance == null) {
+            instance = new LoanContainer();
+        }
+        return instance;
+    }
+    
+    public ArrayList<Loan> getLoans() {
+        return loans;
+    }
+    /*public Friend findFriendByPhone(String phone) {
+    int i = 0;
+    while (i < friends.size()) {
+        Friend friend = friends.get(i); 
+        if (friend.getPhone().equals(phone)) {
+            return friend; 
+        }
+        i++; 
+    }
+    return null; 
+    }*/
+    public void addToLoan(Loan l) {
+        //return FriendController.getIstance().FriendContainer.getInstance(phone);
+        //return LpController.getIstance().LPContainer.getIstance(serialNumber);
     }
 }

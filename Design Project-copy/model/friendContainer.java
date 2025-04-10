@@ -9,40 +9,42 @@ import java.util.ArrayList;
  */
 public class FriendContainer
 {
-    private ArrayList<Friend>friends;// instansvariabler - erstat eksemplet herunder med dine egne variabler
-    private static FriendContainer _instance;
+    private ArrayList<Friend>friends;
+    private static FriendContainer instance;
+    private Friend friend;
     /**
      * Konstruktør for objekter af klassen LoanContainer
      */
 
     private FriendContainer() {
-            friends = new ArrayList<>();
-        }
-    private static FriendContainer getInstance() {
-        if (_instance == null) {
-            _instance = new FriendContainer();
-        }
-        return _instance;
+        friends = new ArrayList<>();
+        friends.add(new Friend("Anna Hansen", "12345678", "sti 1", 8000, "Aalborg"));
+        friends.add(new Friend("Peter Nielsen", "98765432", "sti 2", 9000, "Aalborg"));
+        friends.add(new Friend("Mette Larsen", "23456789", "Sti 3", 5000, "Aalborg"));
     }
-    public Friend addFriendByPhone(Friend friend) {
-        this.friends.add(friend);
-        friend.setPhone(friend);
-        friend.add(friend);
-        
+    public static FriendContainer getInstance() {
+        if (instance == null) {
+            instance = new FriendContainer();
+        }
+        return instance;
+    }
+    public boolean addFriend(Friend friend) {
+        return friends.add(friend);
+    }
+    public ArrayList<Friend> getFriends() {
+        return friends;
     }
     public Friend findFriendByPhone(String phone) {
-        Friend friend = null;
-        boolean found = false;
-        int i = 0;
-        while (!found && i < friends.size()){
-            Friend f = friends.get(i);
-            if (f.getPhone () == phone){
-                friend = f;
-                found = true;
-            }
-            else {i++;}
+    int i = 0;
+    while (i < friends.size()) {
+        Friend friend = friends.get(i); 
+        if (friend.getPhone().equals(phone)) {
+            return friend; 
         }
-        return friend;
+        i++; 
     }
+    return null; 
+    }
+    
 }
 
