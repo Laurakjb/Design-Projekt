@@ -21,12 +21,12 @@ public class LPContainer
         fearless.addCopy(new Copy(2001, "2024-06-08", 5));
         fearless.addCopy(new Copy(2002, "2024-08-09", 10));
         
-        LP pinkFriday = new LP("PinkFriday", "Nicki Minaj",255, "2021-07-04");
-        pinkFriday.addCopy(new Copy(2003, "2023-05-05", 15));
-        pinkFriday.addCopy(new Copy(2004, "2024-04-04", 20));
+        LP pinkfriday = new LP("Pinkfriday", "Nicki Minaj",255, "2021-07-04");
+        pinkfriday.addCopy(new Copy(2003, "2023-05-05", 15));
+        pinkfriday.addCopy(new Copy(2004, "2024-04-04", 20));
         
         lps.add(fearless);
-        lps.add(pinkFriday);
+        lps.add(pinkfriday);
     }
     public static LPContainer getInstance() {
         if (instance == null) {
@@ -35,14 +35,13 @@ public class LPContainer
         return instance;
     }
     public Copy findCopyBySerialNumber (int serialNumber) {
-      for (LP lp : lps) {
-        for (Copy copy : lp.getCopies()) {
-        if (copy.getSerialNumber() == serialNumber) {
-                return copy;
-            }
-    }
-    
-    }
-    return null;
+        for (LP lp : lps) {
+           Copy copy = lp.findCopyBySerialNumber(serialNumber);
+           if (copy != null) {
+               return copy;
+           }
+        
+        }
+        return null;
     }
 }
