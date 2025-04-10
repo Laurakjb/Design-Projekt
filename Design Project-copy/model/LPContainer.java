@@ -35,13 +35,14 @@ public class LPContainer
         return instance;
     }
     public Copy findCopyBySerialNumber (int serialNumber) {
-        for (LP lp : lps) {
-            Copy copy = lp.findCopyBySerialNumber(serialNumber);
-            if (copy !=null) {
+      for (LP lp : lps) {
+        for (Copy copy : lp.getCopies()) {
+        if (copy.getSerialNumber() == serialNumber) {
                 return copy;
             }
-        }
-        return null;
     }
-     // return lpContainer.findCopyBySerialNumber(serialNumber);
+    
+    }
+    return null;
+    }
 }
