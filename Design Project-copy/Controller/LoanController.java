@@ -14,7 +14,7 @@ public class LoanController {
       
     }
     
-    public Loan createLoan(String phone, int serialNumber, int loanNumber, String borrowDate, String returnDate, boolean status) {
+    public Loan createLoan(String phone, int serialNumber, int loanNumber, String borrowDate, String returnDate, String status) {
        FriendController friendController = new FriendController();
        LPController lpController = new LPController();
         

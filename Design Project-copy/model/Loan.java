@@ -7,14 +7,14 @@ public class Loan
     private int loanNumber;
     private String borrowedDate;
     private String returnDate;
-    private boolean status;
+    private String status;
     private Friend friend;
     private Copy copy;
 
     /**
      * Konstruktør for objekter af klassen Loan
      */
-    public Loan(int loanNumber, String borrowDate, String returnDate, boolean status, Friend friend, Copy copy) {
+    public Loan(int loanNumber, String borrowDate, String returnDate, String status, Friend friend, Copy copy) {
         this.loanNumber = loanNumber;
         this.borrowedDate = borrowDate;
         this.returnDate = returnDate;

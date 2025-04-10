@@ -1,6 +1,6 @@
 package UI;
 import java.util.Scanner;
-
+import Controller.LoanController;
 
 /**
  * Write a description of class LoanMenu here.
@@ -9,22 +9,24 @@ import java.util.Scanner;
  * @version (a version number or a date)
  */
 public class LoanMenu{
+    
+
     /**
      * Constructor for objects of class LoanMenu
      */
     public LoanMenu() {
         
     }
-    public CreateLoan(){
+    public void createLoan(){
         Scanner keyboard = new Scanner(System.in);
         System.out.println("Phone Number");
         String phone = getStringFromUser(keyboard);
         
         System.out.println("Serial Number");
-        int serialNumber = getIntergerFromUser(keyBoard);
+         int serialNumber = getIntegerFromUser(keyboard);
         
         System.out.println("Loan Number");
-        int loanNumber = getIntergerFromUser(keyBoard);
+        int loanNumber = getIntegerFromUser(keyboard);
         
         System.out.println("Borrowed Date");
         String borrowedDate = getStringFromUser(keyboard);
@@ -33,7 +35,7 @@ public class LoanMenu{
         String returnDate = getStringFromUser(keyboard);
         
         System.out.println("Status");
-        Boolean status = getStringFromUser(keyboard);
+        String status = getStringFromUser(keyboard);
         
         
         LoanController loanController = new LoanController();
@@ -65,18 +67,18 @@ public class LoanMenu{
         System.out.println(" [1] create loan");
         System.out.println(" [0] Exit system");
         System.out.println("\n vælg");
-        int choice = getIntergerFromUser(keyboard);
+        int choice = getIntegerFromUser(keyboard);
         return choice;
   
     }
-    private int getIntergerFromUser(Scanner keyboard) {
+    private int getIntegerFromUser(Scanner keyboard) {
         while (!keyboard.hasNextInt()) {
             System.out.println("Input only numbers");
             keyboard.nextInt();
         }
         return keyboard.nextInt();
     }
-    private int getStringFromUser(Scanner keyboard) {
+    private String getStringFromUser(Scanner keyboard) {
         while (!keyboard.hasNextLine()) {
             System.out.println("Kun bogstaver");
             keyboard.nextLine();
