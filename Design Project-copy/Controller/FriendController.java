@@ -18,10 +18,7 @@ public class FriendController
      */
     public FriendController() {
         friendContainer = friendContainer.getInstance();
-    }
-    public void createFriend(String name, String phone, String address, int postalCode, String city) {
-        Friend friend = new Friend(name, phone, address, postalCode, city); 
-        friendContainer.addFriend(friend); 
+    
     }
     
     public Friend findFriendByPhone(String phone) {
