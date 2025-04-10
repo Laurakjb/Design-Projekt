@@ -27,15 +27,15 @@ public class Friend
         this.city = city;
     }
 
-    /*
+    
     public String getName(){
         return name;
     }
-    /
+    
     public String getPhone(){
         return phone;
     }
-    /
+    
     public String getAddress(){
         return address;
     }
@@ -45,5 +45,5 @@ public class Friend
     public String getCity(){
         return city;
     }
-    */
+
 }
