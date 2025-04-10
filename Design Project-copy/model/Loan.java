@@ -1,4 +1,5 @@
 package model;
+import java.util.List;
 
 public class Loan
 {
@@ -13,47 +14,44 @@ public class Loan
     /**
      * Konstruktør for objekter af klassen Loan
      */
-    public Loan(int loanNumber, String borrowedDate, String returnDate, boolean status, Friend friend, Copy copy) {
+    public Loan(int loanNumber, String borrowDate, String returnDate, boolean status, Friend friend, Copy copy) {
         this.loanNumber = loanNumber;
-        this.borrowedDate = borrowedDate;
+        this.borrowedDate = borrowDate;
         this.returnDate = returnDate;
         this.status = status;
         this.friend = friend;
         this.copy = copy;
-    }
-    public int getLoanNumber() {
-        return loanNumber;
-    }
-    
-    public String getBorrowedDate() {
-        return borrowedDate;
+        
+        
     }
     
-    public String getReturnDate() {
-        return returnDate;
-    }
-    public boolean getStatus() {
-        return status;
-    }
-    public Friend getFriend() {
-        return friend;
-    }
-    public Copy getCopy() {
+    //public Loan loan(Friend f) {
+        //Loan newLoan = new Loan(int loanNumber, String borrowDate, String returnDate, boolean status,
+        //new copy(int purchasePrice, String purchaseDate, int serialNumber));
+        
+        //return newLoan;
+   // }
+    
+    public Copy addCopyToLoan(Copy c) {
         return copy;
     }
-    public void createloan(int loanNumber, String borrowDate) {
-        
+    
+    public void setStatus(boolean isAvailable) {
+        this.status = isAvailable;
     }
-    public String addFriendByPhone(String phone) {
-        return phone;
-    }
-    public void addToLoan(Loan l) {
-        
-    }
-    public void setStatus() { 
+    //copy i stead for?
+    /*public void setStatus() {
         this.status = status;
-    }
-    public void setBorrowedDate() {
+        if (borrowedDate < today) {
+            return "avaible";
+        }
+        else if (borrowedDate > today) {
+            return "not avaible";
+        }
+    }*/
+    
+    public void setBorrowedDate(String borrowedDate) {
         this.borrowedDate = borrowedDate;
     }
+    
 }    
