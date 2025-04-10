@@ -1,53 +1,20 @@
 #BlueJ package file
-<<<<<<< HEAD
-dependency1.from=LP
-dependency1.to=Copy
+dependency1.from=Loan
+dependency1.to=Friend
 dependency1.type=UsesDependency
-dependency2.from=LPContainer
-dependency2.to=LP
-=======
-dependency1.from=LPContainer
-dependency1.to=LP
-dependency1.type=UsesDependency
-dependency2.from=LPContainer
+dependency2.from=Loan
 dependency2.to=Copy
->>>>>>> 71ac5256f5c9e40adff5ad02cfa4b67eaa3f7951
 dependency2.type=UsesDependency
 dependency3.from=LPContainer
-dependency3.to=Copy
+dependency3.to=LP
 dependency3.type=UsesDependency
-<<<<<<< HEAD
-dependency4.from=FriendContainer
-dependency4.to=Friend
+dependency4.from=LPContainer
+dependency4.to=Copy
 dependency4.type=UsesDependency
-dependency5.from=Loan
-dependency5.to=Friend
-dependency5.type=UsesDependency
-dependency6.from=Loan
-dependency6.to=Copy
-dependency6.type=UsesDependency
-dependency7.from=LoanContainer
-dependency7.to=Loan
-dependency7.type=UsesDependency
-objectbench.height=92
-objectbench.width=1256
-package.divider.horizontal=0.6
-package.divider.vertical=0.8297389330306469
-package.editor.height=479
-package.editor.width=1167
-package.editor.x=0
-package.editor.y=0
-package.frame.height=686
-package.frame.width=1294
-package.numDependencies=7
-=======
-dependency4.from=Loan
-dependency4.to=Friend
-dependency4.type=UsesDependency
-dependency5.from=Loan
+dependency5.from=LP
 dependency5.to=Copy
 dependency5.type=UsesDependency
-dependency6.from=friendContainer
+dependency6.from=FriendContainer
 dependency6.to=Friend
 dependency6.type=UsesDependency
 objectbench.height=100
@@ -56,12 +23,11 @@ package.divider.horizontal=0.6
 package.divider.vertical=0.8007448789571695
 package.editor.height=423
 package.editor.width=670
-package.editor.x=319
-package.editor.y=129
+package.editor.x=451
+package.editor.y=139
 package.frame.height=601
 package.frame.width=800
 package.numDependencies=6
->>>>>>> 71ac5256f5c9e40adff5ad02cfa4b67eaa3f7951
 package.numTargets=7
 package.showExtends=true
 package.showUses=true
@@ -75,11 +41,7 @@ target1.name=Friend
 target1.showInterface=false
 target1.type=ClassTarget
 target1.width=120
-<<<<<<< HEAD
-target1.x=460
-=======
 target1.x=190
->>>>>>> 71ac5256f5c9e40adff5ad02cfa4b67eaa3f7951
 target1.y=270
 target2.height=70
 target2.name=Loan
@@ -114,23 +76,12 @@ target6.name=LoanContainer
 target6.showInterface=false
 target6.type=ClassTarget
 target6.width=120
-<<<<<<< HEAD
-target6.x=360
-target6.y=30
-=======
 target6.x=390
 target6.y=350
->>>>>>> 71ac5256f5c9e40adff5ad02cfa4b67eaa3f7951
 target7.height=70
-target7.name=friendContainer
+target7.name=FriendContainer
 target7.showInterface=false
 target7.type=ClassTarget
-<<<<<<< HEAD
-target7.width=160
-target7.x=560
-target7.y=40
-=======
-target7.width=120
+target7.width=150
 target7.x=240
 target7.y=360
->>>>>>> 71ac5256f5c9e40adff5ad02cfa4b67eaa3f7951
