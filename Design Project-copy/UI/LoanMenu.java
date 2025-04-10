@@ -21,10 +21,10 @@ public class LoanMenu{
         String phone = getStringFromUser(keyboard);
         
         System.out.println("Serial Number");
-        int serialNumber = getIntergetFromUser(keyBoard);
+        int serialNumber = getIntergerFromUser(keyBoard);
         
         System.out.println("Loan Number");
-        int loanNumber = getIntergetFromUser(keyBoard);
+        int loanNumber = getIntergerFromUser(keyBoard);
         
         System.out.println("Borrowed Date");
         String borrowedDate = getStringFromUser(keyboard);
@@ -65,11 +65,11 @@ public class LoanMenu{
         System.out.println(" [1] create loan");
         System.out.println(" [0] Exit system");
         System.out.println("\n vælg");
-        int choice = getIntergetFromUser(keyboard);
+        int choice = getIntergerFromUser(keyboard);
         return choice;
   
     }
-    private int getIntergetFromUser(Scanner keyboard) {
+    private int getIntergerFromUser(Scanner keyboard) {
         while (!keyboard.hasNextInt()) {
             System.out.println("Input only numbers");
             keyboard.nextInt();
