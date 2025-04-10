@@ -2,11 +2,10 @@ package model;
 import java.util.ArrayList;
 
 /**
- * Lav en beskrivelse af klassen Friend her.
- * 
- * @author (dit navn her)
- * @version (versions nummer eller dato her)
- */
+ 
+Lav en beskrivelse af klassen Friend her.
+@author (dit navn her)
+@version (versions nummer eller dato her)*/
 public class Friend
 {
     // har sætter vi parrametrene til at finde vores friends
@@ -15,9 +14,9 @@ public class Friend
     private String address;
     private int postalCode;
     private String city;
-    
+
     // * Konstruktør for objekter af klassen Friend
-    
+
     public Friend(String name, String phone, String address, int postalCode, String city)
     {
         // initialiser instansvariable
@@ -32,11 +31,11 @@ public class Friend
     public String getName(){
         return name;
     }
-    */
+    /
     public String getPhone(){
         return phone;
     }
-    /*
+    /
     public String getAddress(){
         return address;
     }

@@ -16,6 +16,7 @@ public class LP
     private int barcode;
     private String publicationDate;
     private ArrayList<Copy> copies;
+    private Copy copy;
     
 
     /**
