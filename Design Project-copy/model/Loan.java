@@ -25,6 +25,8 @@ public class Loan
         
     }
     
+    
+    
     //public Loan loan(Friend f) {
         //Loan newLoan = new Loan(int loanNumber, String borrowDate, String returnDate, boolean status,
         //new copy(int purchasePrice, String purchaseDate, int serialNumber));
@@ -32,24 +34,18 @@ public class Loan
         //return newLoan;
    // }
     
-    public Copy addCopyToLoan(Copy c) {
+    public Copy addCopyToLoan(Copy copy) {
         return copy;
     }
     
-    public void setStatus(boolean isAvailable) {
-        this.status = isAvailable;
+    public Friend addFriendToLoan(Friend friend) {
+        return friend;
     }
-    //copy i stead for?
-    /*public void setStatus() {
-        this.status = status;
-        if (borrowedDate < today) {
-            return "avaible";
-        }
-        else if (borrowedDate > today) {
-            return "not avaible";
-        }
-    }*/
     
+    public void setStatus() {
+        this.status = status;
+    }
+   
     public void setBorrowedDate(String borrowedDate) {
         this.borrowedDate = borrowedDate;
     }

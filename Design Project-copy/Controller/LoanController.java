@@ -2,33 +2,35 @@ package Controller;
 
 import model.LoanContainer;
 import model.Loan;
+import model.Friend;
+import model.Copy;
 
-/**
- * Lav en beskrivelse af klassen LoanCtrl her.
- * 
- * @author (dit navn her)
- * @version (versions nummer eller dato her)
- */
-public class LoanController
-{
+public class LoanController {
     private LoanContainer loanContainer;
-    private FriendController friendController;
-    private LPController LPController;
-    private Loan loan;
+
     
-    /**
-     * Konstruktør for objekter af klassen LoanCtrl
-     */
-    //public Loan LoanController(Friend friend) {
-      //  return friend;
-   // }
-    
-    public void addCopyToLoan(/*Copy c*/) {
-        
+    public LoanController() {
+      loanContainer = LoanContainer.getInstance();
+      
     }
     
-    public Loan createloan() {
-        return loan;
+    public Loan createLoan(String phone, int serialNumber, int loanNumber, String borrowDate, String returnDate, boolean status) {
+       FriendController friendController = new FriendController();
+       LPController lpController = new LPController();
+        
+       
+       Friend friend = friendController.findFriendByPhone(phone); 
+       if (friend == null) {
+           return null;
+       }
+       Copy copy = lpController.findCopyBySerialNumber(serialNumber);
+       if (copy == null) {
+           return null;
+       }
+       Loan loan = new Loan(loanNumber, borrowDate,returnDate, status, friend, copy);
+       loanContainer.addLoan(loan);
+       return loan;
+       
+    
     }
 }
-

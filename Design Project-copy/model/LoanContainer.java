@@ -17,7 +17,7 @@ public class LoanContainer
     /**
      * Constructor for objects of class LoanContainer
      */
-    public LoanContainer() {
+    private LoanContainer() {
         loans = new ArrayList<>();
     }
     
@@ -42,7 +42,9 @@ public class LoanContainer
     }
     return null; 
     }*/
-    public void addToLoan(Loan l) {
+    public void addLoan(Loan loan) {
+        loans.add(loan);
+        
         //return FriendController.getIstance().FriendContainer.getInstance(phone);
         //return LpController.getIstance().LPContainer.getIstance(serialNumber);
     }
